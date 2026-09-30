@@ -38,7 +38,7 @@ class WidgetText extends StatelessWidget {
               'Texto sublinhado com decoração',
               style: TextStyle(
                 decoration: TextDecoration.underline, // sublinha o texto
-                decorationColor: Colors.blue, // adiciona cor ao sublinhado
+                decorationColor: Colors.red, // adiciona cor ao sublinhado
                 decorationStyle: TextDecorationStyle.dashed, // deixa o sublinhado dividido
               ),
             ),
@@ -53,6 +53,26 @@ class WidgetText extends StatelessWidget {
               child: Text(
                 'Texto alinhado a direita',
                 textAlign: TextAlign.right, // alinha o texto a esquerda
+              ),
+            ),
+            const SizedBox(height: 16.0),
+            Text(
+              'Este é um texto muito longo que talvez'
+              'não caiba completamente na largura disponível.',
+              overflow: TextOverflow.ellipsis,
+            ),
+            const SizedBox(height: 50.0),
+            Text(
+              'Texto que será suavemente desvanecido no final dependendo do tamanho.',
+              overflow: TextOverflow.fade, // aplica um efeito de fade desvanencido até chegar o limite na tela
+              maxLines: 1, // limita a frase somente a uma linha
+              softWrap: false, // não permite a quebra de linha
+            ),
+            const SizedBox(height: 16,),
+            Text(
+              'Linha 1\nLinha 2\nLinha 3.', // \n: quebra de linha
+              style: TextStyle(
+                height: 1.8, // ajusta o tamanho da altura da linha
               ),
             ),
           ],
