@@ -1,4 +1,4 @@
-# core_flutter
+# Core_flutter
 
 A new Flutter project.
 
