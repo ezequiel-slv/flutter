@@ -1,6 +1,6 @@
-import 'package:core_flutter/pages/homepage.dart';
-import 'package:core_flutter/pages/widgettext/widget_text.dart';
-import 'package:core_flutter/pages/widgettext/widget_text_complete.dart';
+import 'package:core_flutter/widgets/row_column/widget_column.dart';
+import 'package:core_flutter/widgets/row_column/widget_row.dart';
+import 'package:core_flutter/widgets/text/widget_text_complete.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -9,6 +9,6 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        home: TextFormatter());
+        home: WidgetColumn());
   }
 }
